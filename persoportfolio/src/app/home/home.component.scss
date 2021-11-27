@@ -1,13 +1,33 @@
-span:before{
-    content: 'Full Stack Developer';
-    animation: animate infinite 20s;
-}
 
-@keyframes animate{
-    40%{
-        content: 'UI/UX Engineer';
+  .container h1 span.typed-text {
+    color: #343148FF;
+  }
+  .container h1 span.cursor {
+    display: inline-block;
+    background-color: #343148FF;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container h1 span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #343148FF; }
+    49% { background-color: #343148FF; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #343148FF; }
+  }
+
+  .btn{
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .card-buttons{
+    margin-bottom: 10%;
+
+    .btncolor1{
+      background-color: #343148FF;
     }
-    50%{
-        content: 'Music Producer';
-    }
-}
+  }
