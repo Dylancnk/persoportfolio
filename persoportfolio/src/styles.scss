@@ -3,6 +3,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 html, body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+}
+
+h1{
+    display: block;
+    font-size: 60px;
+    font-weight: 1000;
+}
+
+h2{
+    display: block;
+    font-size: 28px;
+    font-weight: 1000;
+}
+
+p{
+    font-size: 14px;
+}
+
+.card{
+    background-color: #D7C49EFF;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
 }

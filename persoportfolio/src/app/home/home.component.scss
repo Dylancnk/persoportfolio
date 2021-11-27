@@ -1,0 +1,13 @@
+span:before{
+    content: 'Full Stack Developer';
+    animation: animate infinite 20s;
+}
+
+@keyframes animate{
+    40%{
+        content: 'UI/UX Engineer';
+    }
+    50%{
+        content: 'Music Producer';
+    }
+}
