@@ -35,6 +35,12 @@ p{
     }
 }
 
-.main-title{
-    
+.main-title:after{
+    content: "";
+    background: #343148FF;
+    border-radius: 25px;
+    display: block;
+    height: 4px;
+    margin-top: 10px;
+    width: 30px;
 }
