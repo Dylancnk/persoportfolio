@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { SidecardComponent } from './sidecard/sidecard.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { SkillsComponent } from './skills/skills.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { SkillsComponent } from './skills/skills.component';
     SidecardComponent,
     HomeComponent,
     AboutComponent,
-    SkillsComponent
+    ExperiencesComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

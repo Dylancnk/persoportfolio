@@ -1,0 +1,40 @@
+section{
+    display: block;
+    padding:5%
+}
+
+.card{
+    -webkit-font-smoothing: antialiased;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color:#777777;
+}
+
+.tutor::after{
+   content: ' BETA';
+   font-size: 8px;
+   vertical-align: top;
+   color:red;
+}
+
+.inner-card:hover{
+    background: #343148FF;
+    color:white;
+    transition: all 0.3s ease-in-out;
+    p{
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        color:white;
+    }
+}
+
+.main-title{
+    
+}
