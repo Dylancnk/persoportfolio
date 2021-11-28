@@ -1,0 +1,27 @@
+section{
+    display: block;
+    padding:5%
+}
+
+.card{
+    -webkit-font-smoothing: antialiased;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
+}
+
+p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color:#777777;
+}
+
+.card-title:after{
+    content: "";
+    background: #343148FF;
+    border-radius: 25px;
+    display: block;
+    height: 4px;
+    margin-top: 10px;
+    width: 30px;
+}
