@@ -12,4 +12,7 @@ export class SidecardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ScrollIntoView(elem: string | any) {
+    document.querySelector(elem).scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
 }

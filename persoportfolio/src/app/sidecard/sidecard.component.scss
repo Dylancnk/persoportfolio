@@ -5,5 +5,14 @@
 }
 
 .card{
+    background-color: #D7C49EFF;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
     border-radius: 5%;
+}
+
+li{
+    cursor: pointer;
 }

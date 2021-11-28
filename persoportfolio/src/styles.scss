@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 html, body {
     font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 1.7;
+    background-color: #f6f7ff;
 }
 
 h1{
@@ -20,14 +22,20 @@ h2{
     font-weight: 1000;
 }
 
-p{
-    font-size: 14px;
+h3{
+    display: block;
+    font-size: 24px;
+    font-weight: 1000;
 }
 
-.card{
-    background-color: #D7C49EFF;
-    color: white;
+p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    border-radius: 20px 20px 20px 20px;
-    border-color: transparent;
+    color:#777777;
+}
+
+ul{
+    list-style-type:none;
+    padding-left: 0%;
 }
