@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ServicesComponent } from './services/services.component';
+import { HobbyComponent } from './hobby/hobby.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ServicesComponent } from './services/services.component';
     HomeComponent,
     AboutComponent,
     ExperiencesComponent,
-    ServicesComponent
+    ServicesComponent,
+    HobbyComponent
   ],
   imports: [
     BrowserModule,
