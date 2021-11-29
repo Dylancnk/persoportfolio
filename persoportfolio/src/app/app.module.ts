@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidecardComponent } from './sidecard/sidecard.component';
@@ -11,6 +12,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ServicesComponent } from './services/services.component';
 import { HobbyComponent } from './hobby/hobby.component';
+import { SpotifyService } from './spotify.service';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,12 @@ import { HobbyComponent } from './hobby/hobby.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot()
   ],
-  providers: [],
+  providers: [SpotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
