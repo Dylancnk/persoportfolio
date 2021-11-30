@@ -12,6 +12,12 @@
     border-color: transparent;
 }
 
+.side-card{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 5%;
+}
+
 li{
     cursor: pointer;
 }
