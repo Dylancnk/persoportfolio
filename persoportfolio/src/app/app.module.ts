@@ -13,6 +13,7 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { ServicesComponent } from './services/services.component';
 import { HobbyComponent } from './hobby/hobby.component';
 import { SpotifyService } from './spotify.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SpotifyService } from './spotify.service';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot()
   ],
