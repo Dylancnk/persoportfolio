@@ -7,13 +7,15 @@ section{
     -webkit-font-smoothing: antialiased;
     border-radius: 20px 20px 20px 20px;
     border-color: transparent;
+    background-color: #D7C49EFF;
+    color:white;
 }
 
 p{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
-    color:#777777;
+    color:white;
 }
 
 .tutor::after{
@@ -27,17 +29,11 @@ p{
     background: #343148FF;
     color:white;
     transition: all 0.3s ease-in-out;
-    p{
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif;
-        -webkit-font-smoothing: antialiased;
-        color:white;
-    }
 }
 
 .main-title:after{
     content: "";
-    background: #343148FF;
+    background: white;
     border-radius: 25px;
     display: block;
     height: 4px;
