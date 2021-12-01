@@ -14,6 +14,7 @@ import { ServicesComponent } from './services/services.component';
 import { HobbyComponent } from './hobby/hobby.component';
 import { SpotifyService } from './spotify.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     ExperiencesComponent,
     ServicesComponent,
-    HobbyComponent
+    HobbyComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

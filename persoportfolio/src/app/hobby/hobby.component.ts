@@ -25,10 +25,9 @@ export class HobbyComponent implements OnInit {
     //       })
     // })
 
-    this.spotifyService.getArtist('5fUnrD4Bwhct3etEOPID7X')
-    .subscribe(artist =>{
-      console.log('artist ',artist);
-    })
+    // this.spotifyService.getArtist('5fUnrD4Bwhct3etEOPID7X')
+    // .subscribe(artist =>{
+    //   console.log('artist ',artist);
+    // })
   }
-
 }
