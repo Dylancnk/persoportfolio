@@ -6,28 +6,26 @@
           <div class="row">
             <h3 class="card-title main-title">Let's get in touch</h3>
           </div>
-          <form [formGroup]="FormData">
+          <form action="https://formsubmit.co/a85fac2cf2d3db310f426586de039d22" method="POST">
             <div class="row my-3">
               <div class="col">
-                <input type="text" class="form-control" formControlName="FirstName" placeholder="First name">
+                <input type="text" name="FirstName" class="form-control" placeholder="First name">
               </div>
               <div class="col">
-                <input type="text" class="form-control" formControlName="LastName" placeholder="Last name">
+                <input type="text" name="LastName" class="form-control" placeholder="Last name">
               </div>
             </div>
             <div class="form-group my-3">
-              <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="Email" placeholder="Your Email Address">
+              <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email Address">
             </div>
             <div class="form-group my-3">
-              <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="Message" placeholder="Write me something nice"
+              <textarea class="form-control" name="message" id="exampleFormControlTextarea1" placeholder="Write me something nice"
                 rows="3"></textarea>
             </div>
+            <div class="text-center">
+                <button disabled type="submit" class="btn">Submit</button>
+              </div>
           </form>
-        </div>
-        <div class="text-center">
-        </div>
-        <div class="text-center">
-          <button (click)=onSubmit() class="btn">Submit</button>
         </div>
       </section>
     </div>
