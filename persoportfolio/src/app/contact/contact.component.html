@@ -4,10 +4,30 @@
       <section>
         <div class="card-body">
           <div class="row">
-            <h3 class="card-title main-title">Hobby</h3>
+            <h3 class="card-title main-title">Let's get in touch</h3>
           </div>
+          <form [formGroup]="FormData">
+            <div class="row my-3">
+              <div class="col">
+                <input type="text" class="form-control" formControlName="FirstName" placeholder="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" formControlName="LastName" placeholder="Last name">
+              </div>
+            </div>
+            <div class="form-group my-3">
+              <input type="email" class="form-control" id="exampleFormControlInput1" formControlName="Email" placeholder="Your Email Address">
+            </div>
+            <div class="form-group my-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" formControlName="Message" placeholder="Write me something nice"
+                rows="3"></textarea>
+            </div>
+          </form>
         </div>
         <div class="text-center">
+        </div>
+        <div class="text-center">
+          <button (click)=onSubmit() class="btn">Submit</button>
         </div>
       </section>
     </div>

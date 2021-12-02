@@ -15,6 +15,7 @@ import { HobbyComponent } from './hobby/hobby.component';
 import { SpotifyService } from './spotify.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     CollapseModule.forRoot()
   ],
-  providers: [SpotifyService],
+  providers: [SpotifyService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
