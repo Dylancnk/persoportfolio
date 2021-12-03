@@ -10,6 +10,7 @@ import { ContactService } from '../contact.service';
 export class ContactComponent implements OnInit {
 
   FormData: FormGroup | any;
+  spanMessage: boolean = true;
 
   constructor(private builder: FormBuilder, private contact: ContactService) { }
 
@@ -17,7 +18,7 @@ export class ContactComponent implements OnInit {
     this.FormData = this.builder.group({
       FirstName: new FormControl('', [Validators.required]),
       LastName: new FormControl('', [Validators.required]),
-      Email: new FormControl('', [Validators.required, Validators.email]),
+      Email: new FormControl('', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$")]),
       Message: new FormControl()
   })
   }
