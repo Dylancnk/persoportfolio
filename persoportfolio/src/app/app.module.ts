@@ -16,7 +16,6 @@ import { SpotifyService } from './spotify.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { ContactService } from './contact.service';
-import { ConfirmationModalComponent } from './confirmation-modal/confirmation-modal.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
@@ -28,8 +27,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     ExperiencesComponent,
     ServicesComponent,
     HobbyComponent,
-    ContactComponent,
-    ConfirmationModalComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
