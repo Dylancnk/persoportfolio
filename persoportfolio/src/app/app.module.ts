@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactComponent } from './contact/contact.component';
 import { ContactService } from './contact.service';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { TechComponent } from './tech/tech.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     ExperiencesComponent,
     ServicesComponent,
     HobbyComponent,
-    ContactComponent
+    ContactComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,
