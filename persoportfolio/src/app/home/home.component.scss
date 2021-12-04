@@ -34,32 +34,10 @@
 
   .card-buttons{
     margin-bottom: 5%;
-
-    .btncolor1{
-      background-color: #343148FF;
-      color:white;
-      border: 2px solid #343148FF;
-    }
-  
-    .btncolor1:hover{
-      background-color:white;
-      color: #343148FF;
-    }
-
-    .btncolor2{
-      border: 2px solid white;
-      color:white
-    }
-
-    .btncolor2:hover{
-      background-color:white;
-      color: #343148FF;
-      border: 2px solid #343148FF;
-    }
   }
 
   .face-button {
-  $height: 40px;
+  $height: 33px;
   $accentColor: #343148FF;
   
   height: $height;
@@ -74,6 +52,7 @@
   overflow: hidden;
   border-radius: 10px 10px 10px 10px;
   cursor: pointer;
+  box-shadow: 0 4px rgb(153, 152, 152);
   
   .icon {
     margin-right: 6px;
@@ -95,4 +74,9 @@
   &:hover .face-primary {
     margin-top: -$height;
   }
+}
+
+.face-button:active{
+  box-shadow: 0 2px rgb(153, 152, 152);
+  transform: translateY(1.5px);
 }
