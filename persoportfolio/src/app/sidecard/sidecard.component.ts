@@ -15,4 +15,8 @@ export class SidecardComponent implements OnInit {
   ScrollIntoView(elem: string | any) {
     document.querySelector(elem).scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
+
+  scrollToTop(){
+    window.scroll(0,0);
+  }
 }
