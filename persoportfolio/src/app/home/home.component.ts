@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var require: any
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+ 
   constructor() { }
+  
+  FileSaver = require('file-saver');
 
   ngOnInit(): void {
+
     const typedTextSpan:any = document.querySelector(".typed-text");
     const cursorSpan:any = document.querySelector(".cursor");
 
@@ -52,6 +56,11 @@ export class HomeComponent implements OnInit {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+}
 
+  downloadPdf() {
+    const pdfUrl = './assets/pdf/resume.pdf';
+    const pdfName = 'resume';
+    this.FileSaver.saveAs(pdfUrl, pdfName);
   }
 }
