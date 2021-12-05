@@ -1,7 +1,14 @@
 <div class="card side-card shadow" style="width: 18rem;">
     <div class="container">
-    <div class="text-center py-4">
+    <div class="text-center py-4" (mouseenter) ="onProfileHover()" (mouseleave) ="onProfileHover()">
       <img class="profile-image rounded-circle" src="\assets\images\profilepicture.png">
+      <div *ngIf="overlaid" class="overlay">
+        <div class="row">
+          <div class="col" (click)="onClick(myLinkedin)"><i class="fab fa-linkedin fa-2x cursor"></i></div>
+          <div class="col" (click)="onClick(myFacebook)"><i class="fab fa-facebook fa-2x cursor"></i></div>
+          <div class="col" (click)="onClick(myGithub)"><i class="fab fa-github fa-2x cursor"></i></div>
+        </div>
+      </div>
     </div>
     <div class="card-body">
       <h2 class="card-title">Dylan Cheong.</h2>

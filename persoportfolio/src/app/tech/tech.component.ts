@@ -21,5 +21,4 @@ export class TechComponent implements OnInit {
   onClick(website:string){
     window.open(website);
   }
-
 }
