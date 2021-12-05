@@ -11,26 +11,6 @@ section{
     color:white;
 }
 
-p{
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color:white;
-}
-
-.tutor::after{
-   content: ' BETA';
-   font-size: 8px;
-   vertical-align: top;
-   color:red;
-}
-
-.inner-card:hover{
-    background: #343148FF;
-    color:white;
-    transition: all 0.3s ease-in-out;
-}
-
 .main-title:after{
     content: "";
     background: white;
