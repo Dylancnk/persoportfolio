@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidecard.component.scss']
 })
 export class SidecardComponent implements OnInit {
-
-  overlaid:boolean = false;
+  
+  overlaid: boolean = false;
 
   myLinkedin = 'https://www.linkedin.com/in/dylan-cheong-nam-kwong-910516143/';
   myFacebook = 'https://www.facebook.com/ed.cheong.37';
@@ -16,21 +16,22 @@ export class SidecardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
   ScrollIntoView(elem: string | any) {
     document.querySelector(elem).scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  scrollToTop(){
-    window.scroll(0,0);
+  scrollToTop() {
+    window.scroll(0, 0);
   }
 
-  onProfileHover(){
+  onProfileHover() {
     this.overlaid = !this.overlaid;
   }
 
-  onClick(website:string){
+  onClick(website: string) {
     window.open(website);
   }
 }
