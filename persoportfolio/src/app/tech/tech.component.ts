@@ -13,6 +13,7 @@ export class TechComponent implements OnInit {
   typescriptWebsite = 'https://www.typescriptlang.org/';
   bootstrapWebsite = 'https://getbootstrap.com/';
   firebaseWebsite = 'https://firebase.google.com/';
+  githubProject = 'https://github.com/Dylancnk/persoportfolio'
 
   ngOnInit(): void {
   }
