@@ -16,8 +16,6 @@ export class SidecardComponent implements AfterViewInit {
   elementSelected: string = '#home';
   currentActive = 0;
 
-  constructor() { }
-
   aboutOffset:any = null;
   servicesOffset:any  = null;
   experiencesOffset:any = null;
@@ -26,31 +24,31 @@ export class SidecardComponent implements AfterViewInit {
 
   offset = 250;
 
-  ngAfterViewInit() {  
-    this.aboutOffset = document.querySelector<any>('#about').getBoundingClientRect().top + window.pageYOffset - this.offset;
-    this.servicesOffset = document.querySelector<any>('#services').getBoundingClientRect().top + window.pageYOffset - this.offset;
-    this.experiencesOffset = document.querySelector<any>('#experiences').getBoundingClientRect().top + window.pageYOffset - this.offset;
-    this.hobbyOffset = document.querySelector<any>('#hobby').getBoundingClientRect().top + window.pageYOffset - this.offset;
-    this.contactOffset = document.querySelector<any>('#contact').getBoundingClientRect().top + window.pageYOffset - this.offset;
+  constructor() { }
+  ngAfterViewInit(): void {
+    this.aboutOffset = (document.querySelector<any>('#about').getBoundingClientRect().top + window.pageYOffset) - this.offset;
+    this.servicesOffset = (document.querySelector<any>('#services').getBoundingClientRect().top + window.pageYOffset) - this.offset;
+    this.experiencesOffset = (document.querySelector<any>('#experiences').getBoundingClientRect().top + window.pageYOffset) - this.offset;
+    this.hobbyOffset = (document.querySelector<any>('#hobby').getBoundingClientRect().top + window.pageYOffset) - this.offset;
+    this.contactOffset = (document.querySelector<any>('#contact').getBoundingClientRect().top + window.pageYOffset) - this.offset;
   }
-  
+
   @HostListener('window:scroll', ['$event'])
   checkOffsetTop() {
-    if (window.pageYOffset >= this.aboutOffset! && window.pageYOffset < this.servicesOffset!) {
+    if (window.pageYOffset >= this.aboutOffset && window.pageYOffset < this.servicesOffset) {
       this.currentActive = 1;
-    } else if (window.pageYOffset >= this.servicesOffset! && window.pageYOffset < this.experiencesOffset!) {
+    } else if (window.pageYOffset >= this.servicesOffset && window.pageYOffset < this.experiencesOffset) {
       this.currentActive = 2;
-    } else if (window.pageYOffset >= this.experiencesOffset! && window.pageYOffset < this.hobbyOffset!) {
+    } else if (window.pageYOffset >= this.experiencesOffset && window.pageYOffset < this.hobbyOffset) {
       this.currentActive = 3;
-    } else if (window.pageYOffset >= this.hobbyOffset! && window.pageYOffset < this.contactOffset!) {
+    } else if (window.pageYOffset >= this.hobbyOffset && window.pageYOffset < this.contactOffset) {
       this.currentActive = 4;
-    } else if (window.pageYOffset >= this.contactOffset!) {
+    } else if (window.pageYOffset >= this.contactOffset) {
       this.currentActive = 5;
     } else {
       this.currentActive = 0;
     }
  }
-
 
   ScrollIntoView(elem: string | any) {
     document.querySelector(elem).scrollIntoView({ behavior: 'smooth', block: 'start' });
