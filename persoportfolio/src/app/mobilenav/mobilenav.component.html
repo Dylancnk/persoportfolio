@@ -1,0 +1,18 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button mat-button [matMenuTriggerFor]="menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <mat-menu #menu="matMenu" class="menu-position">
+        <button (click)="scrollToTop()" class="btn bg-light" mat-menu-item>Home</button>
+        <button (click)="ScrollIntoView(aboutOffset)" class="btn bg-light" mat-menu-item>About</button>
+        <button (click)="ScrollIntoView(servicesOffset)" class="btn bg-light" mat-menu-item>Services</button>
+        <button (click)="ScrollIntoView(experiencesOffset)" class="btn bg-light" mat-menu-item>Experiences</button>
+        <button (click)="ScrollIntoView(hobbyOffset)" class="btn bg-light" mat-menu-item>Hobby</button>
+        <button (click)="ScrollIntoView(contactOffset)" class="btn bg-light" mat-menu-item>Contact</button>
+      </mat-menu>
+      <div>
+        <img (click)="ScrollIntoView(aboutOffset)" class="profile-image rounded-circle" src="\assets\images\profilepicture.png">
+    </div>
+    </div>
+  </nav>

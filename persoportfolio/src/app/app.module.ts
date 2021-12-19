@@ -18,6 +18,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactService } from './contact.service';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { TechComponent } from './tech/tech.component';
+import { MatMenuModule} from '@angular/material/menu';
+import { MobilenavComponent } from './mobilenav/mobilenav.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { TechComponent } from './tech/tech.component';
     ServicesComponent,
     HobbyComponent,
     ContactComponent,
-    TechComponent
+    TechComponent,
+    MobilenavComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { TechComponent } from './tech/tech.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatMenuModule,
     ModalModule.forRoot(),
     CollapseModule.forRoot()
   ],

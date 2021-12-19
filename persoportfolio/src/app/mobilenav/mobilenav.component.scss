@@ -1,0 +1,19 @@
+@media only screen and (min-width: 994px) {
+	.navbar{
+        display: none;
+    }
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid white;
+}
+
+.menu-style {
+    z-index: 9999;
+}
+
+.mat-menu-item{
+    font-family: inherit;
+}

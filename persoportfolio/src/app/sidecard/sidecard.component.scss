@@ -12,11 +12,19 @@
   border-color: transparent;
 }
 
-.side-card {
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 5%;
+@media only screen and (max-width: 994px) {
+	.side-card {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 994px) {
+  .side-card {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 5%;
+  }
 }
 
 li {

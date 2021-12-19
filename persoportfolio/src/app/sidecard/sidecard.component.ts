@@ -22,7 +22,7 @@ export class SidecardComponent implements AfterViewInit {
   hobbyOffset:any = null;
   contactOffset:any = null;
 
-  offset = 250;
+  offset = 300;
 
   constructor() { }
   ngAfterViewInit(): void {
@@ -51,8 +51,6 @@ export class SidecardComponent implements AfterViewInit {
  }
 
   ScrollIntoView(elem: string | any) {
-    // document.querySelector(elem).scrollIntoView({ behavior: 'smooth', block: 'start' });
-    // this.elementSelected = elem;
     window.scrollTo(0,elem)
   }
 
